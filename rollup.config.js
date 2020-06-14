@@ -1,3 +1,4 @@
+import bundleSize from 'rollup-plugin-size';
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import vue from "rollup-plugin-vue";
@@ -17,6 +18,7 @@ export default [
       sourcemap,
     },
     plugins: [
+      bundleSize(),
       resolve(),
       commonjs(),
       vue({ css: false }),
