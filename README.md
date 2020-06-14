@@ -19,12 +19,12 @@ You can find a list of Pluginkit variants on the [`master` branch](https://githu
 
 ### Install the development and build setup
 
-We use [Parcel](https://parceljs.org/) for the development and build setup.
+We use [rollup.js](https://rollupjs.org) for the development and build setup.
 
-We recommend to install parcel globally, so you can reuse it for all your plugins:
+Rollup plugins needed for compiling Vue templates, Sass as well as bundling are handled b default. To install the required node modules, run:
 
 ```
-npm install -g parcel-bundler
+npm install
 ```
 
 ### Development

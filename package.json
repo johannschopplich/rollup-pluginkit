@@ -1,9 +1,36 @@
 {
   "scripts": {
-    "dev": "parcel watch src/index.js --no-source-maps -d ./",
-    "build": "parcel build src/index.js --no-source-maps --experimental-scope-hoisting -d ./"
+    "dev": "rollup --config --watch",
+    "build": "rollup --config"
   },
-  "posthtml": {
-    "recognizeSelfClosing": true
-  }  
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@rollup/plugin-babel": "^5.0.3",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "core-js": "^3.6.5",
+    "rollup": "^2.15.0",
+    "rollup-plugin-scss": "^2.5.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-vue": "^5.1.9",
+    "sass": "^1.26.8",
+    "terser": "^4.7.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "last 2 Android versions",
+    "last 2 Chrome versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 Edge versions",
+    "last 2 Firefox versions",
+    "last 2 FirefoxAndroid versions",
+    "last 2 iOS versions",
+    "last 2 KaiOS versions",
+    "last 2 Safari versions",
+    "last 2 Samsung versions",
+    "last 2 Opera versions",
+    "last 2 OperaMobile versions",
+    "last 2 UCAndroid versions"
+  ]
 }
