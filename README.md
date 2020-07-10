@@ -1,10 +1,8 @@
-# Kirby Pluginkit: Example plugin for Kirby
+# Kirby Rollup Pluginkit
 
-> Variant "Panel plugin setup"
+This is a boilerplate for a Kirby Panel plugin that uses [Rollup.js](https://rollupjs.org) as an alternative to Parcel.js utilized by the [official pluginkit](https://github.com/getkirby/pluginkit/tree/4-panel). No other parts of the pluginkit were modified.
 
-This is a boilerplate for a Kirby Panel plugin that can be installed via all three [supported installation methods](https://getkirby.com/docs/guide/plugins/plugin-setup-basic#the-three-plugin-installation-methods).
-
-You can find a list of Pluginkit variants on the [`master` branch](https://github.com/getkirby/pluginkit/tree/master).
+Rollup offers more fine-graned control over the build process and requires less node modules to install. This pluginkit has been successfully field-tested to compile the Kirby Editor.
 
 ****
 
@@ -19,7 +17,7 @@ You can find a list of Pluginkit variants on the [`master` branch](https://githu
 
 ### Install the development and build setup
 
-We use [rollup.js](https://rollupjs.org) for the development and build setup.
+We use [Rollup.js](https://rollupjs.org) for the development and build setup.
 
 Rollup plugins needed for compiling Vue templates, Sass as well as bundling are handled b default. To install the required node modules, run:
 
