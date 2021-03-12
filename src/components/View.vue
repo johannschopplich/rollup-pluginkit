@@ -11,6 +11,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 /** put your css here **/
 </style>
